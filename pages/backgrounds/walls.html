@@ -1,0 +1,84 @@
+<html>
+<head>
+
+<link rel="icon" type="png" href="images/icon.png" />
+
+<title>
+
+Hellstrike
+
+</title>
+
+<style>
+
+body {
+	display: block;
+    margin: 0px;
+	font-family: play;
+	background: black;
+}
+
+.biglogo {
+    position: fixed;
+    right: 0;
+    height: 92%;
+    bottom: 0;
+}
+
+.biglogo img {
+    height: 100%;
+    bottom: 0px;
+}
+
+video#bgvid { 
+    position: fixed;
+	z-index: -102;
+}
+
+
+@media (min-aspect-ratio: 16/9) {
+	video#bgvid {
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media (max-aspect-ratio: 16/9) {
+	video#bgvid {
+		width: auto;
+		height: 100%;
+	}
+}
+
+@media (max-width: 900px) {
+	video#bgvid {
+		display: none;
+		width: auto;
+		height: 100%;
+	}
+}
+
+
+
+
+</style>
+
+
+</head>
+
+<body>
+
+<video playsinline autoplay muted loop id="bgvid">
+    <source src="video_backgrounds/background1.webm" type="video/webm">
+</video>
+
+
+<div class="biglogo">
+
+	<img src="image_backgrounds/biglogo.png" alt="biglogo">
+
+</div>
+
+</body>
+
+</html>

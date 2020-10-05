@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="icon" type="png" href="images/icon.png" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+
+Hellstrike
+
+</title>
+
+
+<style>
+body {
+    background-color: #00000059;
+	background: url(images/hexagon.png);
+    color: white;
+	transition: 0.5s;
+	animation: transitionIn 0.75s;
+	margin: 0;
+	font-family: play;
+}
+
+
+.bodypage {
+    position: relative;
+	display: table;
+    width: 1150px;
+    top: 4em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.gallery {
+    position: relative;
+    width: 72%;
+    height: 421px;
+    float: left;
+}
+
+.gallerypad {
+    position: relative;
+    height: 100%;
+}
+
+
+
+
+iframe {
+    position: relative;
+    width: 100%;
+    border: none;
+}
+
+.smallbanner1 {
+    position: relative;
+    width: 26%;
+    float: right;
+}
+
+.smallbanner1 img {
+    position: relative;
+    width: 100%;
+}
+
+
+.smallbanner2 {
+    position: relative;
+    width: 26%;
+    float: right;
+	margin-top: 54px;
+}
+
+.smallbanner2 img {
+    position: relative;
+    width: 100%;
+}
+
+
+
+.mediumbanner1 {
+    position: relative;
+    width: 50%;
+	float: left;
+	margin-top: 40px;
+}
+
+.mediumbanner1 img {
+    position: relative;
+    width: 560px;
+}
+
+.mediumbanner2 {
+    position: relative;
+    width: 50%;
+	float: left;
+	margin-top: 36px;
+}
+
+.mediumbanner2 img {
+    position: relative;
+    width: 560px;
+    margin-left: 12px;
+}
+
+.blogger {
+    position: relative;
+    width: 49%;
+    height: 656px;
+    float: left;
+    margin-top: 30px;
+}
+
+.bloggerpad {
+    position: relative;
+    height: 100%;
+}
+
+.twitter {
+    position: relative;
+    width: 49%;
+    height: 656px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.twitterpad {
+    position: relative;
+    height: 100%;
+}
+
+
+.footer {
+    position: relative;
+    background: #00000087;
+    width: 100%;
+    margin-top: 130px;
+	padding: 40px 0px;
+	text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
+    position: relative;
+    color: #989898;
+    padding: 0px 60px;
+}
+
+
+@media screen and (max-width:1260px) {
+	.bodypage {
+		position: relative;
+		display: table;
+		width: 100%;
+		top: 4em;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media screen and (max-width:1260px) {
+	.gallery {
+		position: relative;
+		width: 100%;
+		height: 300px;
+		float: none;
+	}
+
+}
+
+@media screen and (max-width:1260px) {
+	.smallbanner1 {
+		position: relative;
+		width: 49%;
+		float: left;
+	}
+}
+
+@media screen and (max-width:1260px) {
+	.smallbanner1 img {
+		position: relative;
+		margin-left: unset;
+		width: 100%;
+		margin-top: 30px;
+		margin-bottom: 32px;
+	}
+}
+
+@media screen and (max-width:1260px) {
+	.smallbanner2 {
+		position: relative;
+		width: 49%;
+		float: right;
+		margin-top: unset;
+	}
+}
+
+@media screen and (max-width:1260px) {
+	.smallbanner2 img {
+		position: relative;
+		margin-left: unset;
+		width: 100%;
+		margin-top: 30px;
+		margin-bottom: 32px;
+	}
+}
+
+
+
+
+
+@media screen and (max-width:1260px) {
+	.mediumbanner1 {
+		position: relative;
+		width: 49%;
+		float: left;
+	    margin-top: unset;
+	}
+}
+
+@media screen and (max-width:1260px) {
+	.mediumbanner1 img {
+		position: relative;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width:1260px) {
+	.mediumbanner2 {
+		position: relative;
+		width: 49%;
+		float: right;
+		margin-top: unset;
+	}
+}
+
+@media screen and (max-width:1260px) {
+	.mediumbanner2 img {
+		position: relative;
+		width: 100%;
+		margin-left: unset;
+	}
+}
+
+@media screen and (max-width:1260px) {
+	.blogger {
+		position: relative;
+		width: 49%;
+		height: 656px;
+		float: left;
+		margin-top: 30px;
+	}
+}
+
+@media screen and (max-width:1260px) {
+	.twitter {
+		position: relative;
+		width: 49%;
+		height: 656px;
+		float: right;
+		margin-left: unset;
+		margin-top: 30px;
+	}
+}
+
+
+@media screen and (max-width:1023px) {
+	.bodypage {
+		position: relative;
+		display: table;
+		width: 100%;
+		top: 4em;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+
+@media screen and (max-width:1023px) {
+	.blogger {
+		position: relative;
+		width: 100%;
+		height: 656px;
+		float: left;
+		margin-top: 30px;
+	}
+}
+
+@media screen and (max-width:1023px) {
+	.twitter {
+		position: relative;
+		width: 100%;
+		height: 656px;
+		float: right;
+		margin-left: unset;
+		margin-top: 30px;
+	}
+}
+
+
+
+@media screen and (max-width:1023px) {
+	.gallery {
+		position: relative;
+		width: 100%;
+		height: 300px;
+		float: none;
+	}
+
+}
+
+
+@keyframes transitionIn {
+	from {
+		opacity: 0;
+		transform: rotateX(-10deg);
+	}
+	
+	to {
+		opacity: 1;
+		transform: rotateX(0);
+	}
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+
+
+<div class="bodypage">
+
+
+<div class="gallery">
+
+	<div class="gallerypad">
+
+		<iframe width="100%" height="100%" src="gallery.html" name="walls"></iframe>
+
+	</div>
+
+</div>
+
+
+<div class="smallbanner1">
+
+	<a href="https://gamebanana.com/wips/50611" target="_blank"><img src="images/hellstrike_wip.jpg" alt="smallbanner"></a>
+
+</div>
+
+<div class="smallbanner2">
+
+	<a href="https://gamebanana.com/wips/50611"><img src="images/hellstrike_wip.jpg" alt="smallbanner"></a>
+	
+</div>
+
+<div class="mediumbanner1">
+
+	<a href="https://gamebanana.com/wips/50611" target="_blank"><img src="images/test.jpg" alt="mediumbanner1" name="mediumbanner1"></a>
+
+</div>
+
+<div class="mediumbanner2">
+
+	<a href="https://gamebanana.com/wips/50611" target="_blank"><img src="images/test.jpg" alt="mediumbanner2" name="mediumbanner2"></a>
+
+</div>
+
+<div class="blogger">
+
+	<div class="bloggerpad">
+
+		<iframe width="100%" height="100%" src="https://hellstrike-changelog.blogspot.com/" allowtransparency="true" name="walls"></iframe>
+
+	</div>
+
+</div>
+
+<div class="twitter">
+
+	<div class="twitterpad">
+
+		<iframe width="100%" height="100%" src="twitter.html" name="walls"></iframe>
+
+	</div>
+</div>
+
+</div>
+
+<div class="footer">
+	  <a href="mainpage.html" target="iframe_a">Home</a>
+      <a href="changelog.html" target="iframe_a">Updates</a>
+      <a href="7053r.html" target="iframe_a">7053R Team</a>
+	  <a href="contact.html" target="iframe_a">Contact</a>
+	  <a href="download.html" target="iframe_a">Download</a>
+	  
+	  
+</div>
+
+
+<script>
+
+</script>
+
+</body>
+</html>

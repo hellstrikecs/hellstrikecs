@@ -1,0 +1,290 @@
+<html>
+<head>
+
+<link rel="icon" type="png" href="images/icon.png" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+
+Hellstrike
+
+</title>
+
+
+<style>
+
+
+
+body {
+    display: block;
+    margin: 0px;
+	animation: transitionIn 0.75s;
+	font-family: play;
+}
+
+
+
+
+iframe {
+    position: relative;
+    width: 100%;
+    border: none;
+}
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: white;
+  color: black;
+}
+
+.active {
+    position: relative;
+    background-color: #ffffff00;
+    color: black;
+    width: 39px;
+    height: 18px;
+    background: url(images/hsmenuicon.png);
+}
+
+iframe {
+    position: absolute;
+    width: 100%;
+    border: none;
+	transition: 0.5s;
+}
+
+
+
+
+
+.mobilemenu a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.home {
+    float: left;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    width: 70%;
+}
+
+.home a {
+    font-size: 16px;
+    text-align: center;
+    padding: 14px 0px;
+    text-decoration: none;
+    width: 100%;
+}
+
+
+.home a:hover {
+  color: black;
+  background-color: white;
+}
+
+.hell {
+  float: right; 
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  width: 15%;
+}
+
+.hell a {
+    font-size: 16px;
+    text-align: center;
+    padding: 14px 0px;
+    text-decoration: none;
+    width: 100%;
+	height: 47px;
+	height: 19px;
+	background: url(images/hsmenuiconmobile.png);
+    background-size: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hell a:hover {
+  background: url(images/hsmenuiconmobilehover.png);
+  background-size: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+    width: 15%;
+}
+
+
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  width: 100%;
+  height: 47px;
+  background: url(base/mobilebutton.png);
+  background-size: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.dropdown .dropbtn:hover {
+  background: url(base/mobilebuttonhover.png);
+  background-size: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #f9f9f9;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+
+@keyframes transitionIn {
+	from {
+		opacity: 0;
+		transform: rotateX(-10deg);
+	}
+	
+	to {
+		opacity: 1;
+		transform: rotateX(0);
+	}
+}
+
+
+@media screen and (max-width:1023px) {
+	ul {
+	  display: none;
+	}
+}
+
+@media screen and (max-width:1023px) {
+	li {
+	  display: none;
+	}
+}
+
+@media screen and (max-width:1023px) {
+	.mobilemenu {
+	  overflow: hidden;
+	  background-color: black;
+	  position: fixed;
+	  width: 100%;
+	}
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+
+<iframe width="100%" height="100%" src="backgrounds/walls.html" name="walls"></iframe>
+
+<iframe width="100%" height="100%" src="hell.html" name="iframe_a"></iframe>
+
+<ul>
+  <li><a class="active" href="hell.html" target="iframe_a"></a></li>
+  <li><a href="mainpage.html"  target="iframe_a">Home</a></li>
+  <li><a href="changelog.html"  target="iframe_a">Updates</a></li>
+  <li><a href="7053r_base.html" target="iframe_a">7053R Team</a></li>
+  <li><a href="contact_base.html" target="iframe_a">Contact</a></li>
+  <li><a href="download.html"  target="iframe_a">Download</a></li>
+</ul>
+
+
+<div class="mobilemenu">
+<div class="dropdown">
+    <button class="dropbtn"> <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="mainpage.html" target="iframe_a">Home</a>
+      <a href="changelog.html" target="iframe_a">Updates</a>
+      <a href="7053r.html" target="iframe_a">7053R Team</a>
+	  <a href="contact.html" target="iframe_a">Contact</a>
+	  <a href="download.html" target="iframe_a">Download</a>
+    </div>
+  </div>
+  <div class="home"><a href="mainpage.html" target="iframe_a">home</a></div>
+  <div class="hell"><a href="hell.html" target="iframe_a"></a></div>
+   
+</div>
+
+
+</body>
+
+</html>

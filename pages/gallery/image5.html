@@ -1,0 +1,119 @@
+<html>
+<head>
+
+<link rel="icon" type="png" href="images/icon.png" />
+
+<title>
+
+Hellstrike
+
+</title>
+
+
+<style>
+
+body {
+    display: block;
+    margin: 0px;
+	background: #00000000;
+	font-family: play;
+}
+
+
+.bgbutton {
+    position: fixed;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	top: 0;
+}
+
+
+.gallery {
+    position: fixed;
+    width: 100%;
+    border: none;
+	transition: 0.5s;
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(images/image5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+	transition: 0.3s;
+	animation: transitionIn 0.3s;
+	z-index: -100; 
+}
+
+
+.leftnextbutton {
+    position: fixed;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    bottom: 40%;
+	left: 0px;
+}
+
+.rightnextbutton {
+    position: fixed;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    bottom: 40%;
+	right: 0px;
+}
+
+@keyframes transitionIn {
+	from {
+		opacity: 0;
+		transform: translateX(-20px);
+	}
+	
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+</style>
+
+
+</head>
+
+<body>
+
+<meta http-equiv="refresh" content="5; url=image1.html">
+
+
+<div class="twinkling"></div>
+
+
+<div class="background"></div>
+
+<div class="leftnextbutton">
+  <a href="image4.html"><img src="base/leftnextbutton.png"></a>
+</div>
+
+
+<div class="rightnextbutton">
+  <a href="image1.html"><img src="base/rightnextbutton.png"></a>
+</div>
+
+<div class="bgbutton">
+  <a><img src="base/features.png"></a>
+  <a href="image1.html" target="gallery"><img src="base/fbuttons1.png"></a>
+  <a href="image2.html" target="gallery"><img src="base/fbuttons2.png"></a>
+  <a href="image3.html" target="gallery"><img src="base/fbuttons3.png"></a>
+  <a href="image4.html" target="gallery"><img src="base/fbuttons4.png"></a>
+  <a href="image5.html" target="gallery"><img src="base/fbuttons5active.png"></a>
+</div>
+
+
+
+</body>
+
+</html>
